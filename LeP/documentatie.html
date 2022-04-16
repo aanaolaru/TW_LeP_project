@@ -52,6 +52,11 @@
                 <ol>
                     <li> <a href="#chapter4_1"> Inregistrare </a> </li>
                     <li> <a href="#chapter4_2"> Autentificare </a> </li>
+                    <li> <a href="#chapter4_3"> Search Bar </a> </li>
+                    <li> <a href="#chapter4_4"> Bara de navigatie </a> </li>
+                    <li> <a href="#chapter4_5"> Header </a> </li>
+                    <li> <a href="#chapter4_6"> Footer </a> </li>
+                    <li> <a href="#chapter4_7"> Deconectare </a> </li>
                 </ol>
             </li>
                 </section>
@@ -140,6 +145,7 @@
                 <ul type="square" id="unord">
                     <li> Inregistrare </li>
                     <li> Autentificare </li>
+                    <li> Search Bar </li>
                     <li> Bara de navigatie </li>
                     <li> Butoane de expandare pentru fiecare componenta hardware</li>
                     <li> Afisare informatii in sectiunea selectatata</li>
@@ -285,5 +291,91 @@
             <br> Afisarea continutului corespunzator si incarcarea componentei ce contine numele utilizatorului pe pagina principala plus numele albumelor salvate in sectiunea “Saved albums” si numele albumelor primite din partajari in sectiunea "Received
             albums" din meniu.
             <br> Setarea cookie-urilor.
+        </p>
+    </section>
+
+    <section id="chapter4_3">
+        <h3> 4.3 Search bar </h3>
+        <p>
+            4.3.1 Description and Priority Provide
+            <br> Priority High
+            <br> Componenta permite cautarea unei componente si generarea rezultatului corespunzator.
+            <br>
+            <br> 4.3.2 Stimulus/Response Sequences
+            <br> Utilizatorul apasa pe bara de search – Sistemul focuseaza bara de search si permite utilizatorului introducerea de text.
+            <br> Utilizatorul apasa enter dupa ce a introdus text in bara de cautare – Sistemul afiseaza rezultatul pentru acea cautare sau un mesaj de eroare in cazul in care nu sunt gasite date in conformitate cu inputul introdus.
+            <br>
+            <br> 4.3.3 Functional Requirments
+            <br> Preluarea textului din field-ul de input al barii de cautare.
+            <br> Request din frontend catre backend.
+            <br> Call catre baza de date din backend si interogarea acesteia pentru a selecta datele care corespund cu textul introdus in bara de cautare.
+            <br> Response din backend catre frontend cu datele obtinute in urma interogarii.
+            <br> Crearea componentelor de afisat in frontend, in functie de datele primite de la backend.
+        </p>
+    </section>
+
+    <section id="chapter4_4">
+        <h3> 4.4 Bara de navigatie</h3>
+        <p>
+            4.4.1 Description and Priority Provide
+            <br> Priority Low
+            <br> Componenta permite unui utilizator logat sa se deplaseze pe site pe alte pagini asociate fiecarui buton.
+            <br>
+            <br> 4.4.2 Stimulus/Response Sequences
+            <br> 
+            <br>START - deplasare catre pagina de start.
+            <br>LEARN - deplasare catre pagina de informatii despre fiecare componenta.
+            <br>TEST - deplasare catre pagina de testare(joc).
+            <br>RANKING - deplasare catre pagina de generare a clasamentului bazat pe punctajul fiecarui utilizator.
+            <br> 
+        </p>
+    </section>
+
+    <section id="chapter4_5">
+        <h3> 4.5 Header</h3>
+        <p>
+            4.5.1 Description and Priority Provide
+            <br> Priority Low
+            <br> Componenta contine Logo-ul siteului, descrierea siteului si buton de deconectare. Aceasta componenta apartine fiecareia dintre paginile proiectului.            <br>
+            <br> 4.16.2 Stimulus/Response Sequences
+            <br> 
+            <br>Logo - prin apasarea acestui buton poti ajunge la fel ca de pe butonul START pe pagina de start.
+            <br>Deconectare - Componenta permite unui utilizator logat sa se delogheze de pe site.
+            <br> 
+        </p>
+    </section>
+
+    <section id="chapter4_6">
+        <h3> 4.6 Footer</h3>
+        <p>
+            4.6.1 Description and Priority Provide
+            <br> Priority Low
+            <br> Componenta contine sectiuni de reguli pentru utilizatori si adresa de contact.
+            <br>
+            <br> Aceasta componenta apartine fiecareia dintre paginile proiectului.
+            <br>
+            <br> 4.6.2 Stimulus/Response Sequences
+            <br> 
+            <br>Sectiuni de reguli pentru utilizatori - permite deplasarea pe pagina de reguli.
+            
+            
+            <br> 
+        </p>
+    </section>
+
+    <section id="chapter4_7">
+        <h3> 4.7 Deconectare</h3>
+        <p>
+            4.7.1 Description and Priority Provide
+            <br> Priority Low
+            <br> Componenta permite unui utilizator logat sa se delogheze de pe site.
+            <br>
+            <br> 4.16.2 Stimulus/Response Sequences
+            <br> Userul apasa pe butonul “Log out” – Sistemul delogheaza utilizatorul de pe site.
+            <br>
+            <br> 4.16.3 Functional Requirments
+            <br> Request din frontend catre backend.
+            <br> Update cookie cu statusul utilizatorului pe 0 (delogat).
+            <br> Response de la backend catre frontend si actualizarea componentelor din frontend in urma delogarii.
         </p>
     </section>

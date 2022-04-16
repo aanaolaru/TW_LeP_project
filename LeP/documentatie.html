@@ -56,7 +56,9 @@
                     <li> <a href="#chapter4_4"> Bara de navigatie </a> </li>
                     <li> <a href="#chapter4_5"> Header </a> </li>
                     <li> <a href="#chapter4_6"> Footer </a> </li>
-                    <li> <a href="#chapter4_7"> Deconectare </a> </li>
+                    <li> <a href="#chapter4_7"> Butoane de expandare pentru fiecare componenta hardware</a> </li>
+                    <li> <a href="#chapter4_8"> Afisare informatii in sectiunea selectatata </a> </li>
+                    <li> <a href="#chapter4_9"> Deconectare </a> </li>
                 </ol>
             </li>
                 </section>
@@ -364,16 +366,57 @@
     </section>
 
     <section id="chapter4_7">
-        <h3> 4.7 Deconectare</h3>
+        <h3> 4.7 Butoane de expandare pentru fiecare componenta hardware</h3>
         <p>
             4.7.1 Description and Priority Provide
+            <br> Priority High
+            <br> Componenta permite utilizatorilor selectarea si vizualizarea numelui uneia dintre cele 10 componente hardware specifice unui calculator:
+             CPU, random access memory (RAM), monitor, mouse, tastatura, computer data storage, graphics card, sound card, speakers si motherboard.
+            <br>
+            <br> 4.7.2 Stimulus/Response Sequences
+            <br> Utilizatorul selecteaza unul dintre butoanele de expandare in functie de componenta hardware despre care doreste sa studieze – Sistemul permite utilizatorului sa expandeze un singur buton, cu alte cuvinte nu poate invata despre mai multe componente in acelasi timp.
+            <br>
+            <br> 4.7.3 Design
+            <br> Aceste butoane sunt plasate in sectiunea de "Learn", imediat dupa o scurta descriere despre importanta componentelor hardware.
+            <br> Designul butoanelor a fost gandit in asa fel incat acestea sa se afle in centrul paginii, unul dupa altul, pentru a atrage atentia utilizatorului. 
+            <br> De aceea culoarea aleasa a fost <b>#664147</b>, cea mai inchisa din paleta de culori descrisa mai sus. 
+            <br>Titlul de pe fiecare buton "-numele componentei- -> Start learning", este scris cu font "Pristina", 30px, alb, pentru a arata mai elegant in comparatie cu restul textului de pe pagina. 
+            <br>De asemenea s-a folosit un text-shadow pentru aceste titluri putin mai inchis decat culoarea butoanelor cu scop de accentuare.
+            <br> Butoanele au box-shadow negru pentru a da aspectul unui buton real iar la capatul lor apare un "<b>+</b>" pentru a evidentia faptul ca
+            <br>prin apasarea butonului respectiv, sectiunea se expandeaza, oferind acces utilizatorilor la informatii.  
+            <br>
+        </p>
+    </section>
+
+    <section id="chapter4_8">
+        <h3> 4.8 Afisare informatii in sectiunea selectata </h3>
+        <p>
+            4.8.1 Description and Priority Provide
+            <br> Priority High
+            <br> Componenta permite utilizatorului sa "scrolleze" pentru o cantitate mai mare de informatie.
+            <br>
+            <br> 4.8.2 Design
+            <br> In acest moment utilizatorul incepe procesul de invatare, fiind ajutat de multitudinea de imagini specifice fiecarei componente, gifuri cu demonstratii ale functionalitatilor,
+             <br>text subliniat, italic, boldat, pentru a ajuta observarea detaliilor mai importante. Unele imagini si gifuri sunt asezate in partea dreapta a sectiunii iar alaturi, in partea stanga,
+             <br>apare informatia. Astfel, utilizatorul poate sa vizualizeze scrisul si imaginea in acelasi timp si isi simplifica treaba. Fontul a fost ales de culoare alba din moment ce backgroundul 
+             <br>sectiunii expandate este de culoare inchisa.
+            <br>
+            <br> 4.8.3 Functional Requirments
+            <br> Aranjarea informatiei in pagina in functie de dorinta utilizatorului.
+        </p>
+    </section>
+
+    <section id="chapter4_9">
+        <h3> 4.9 Deconectare</h3>
+        <p>
+            4.9.1 Description and Priority Provide
             <br> Priority Low
             <br> Componenta permite unui utilizator logat sa se delogheze de pe site.
             <br>
-            <br> 4.16.2 Stimulus/Response Sequences
+            <br> 4.9.2 Stimulus/Response Sequences
             <br> Userul apasa pe butonul “Log out” – Sistemul delogheaza utilizatorul de pe site.
             <br>
-            <br> 4.16.3 Functional Requirments
+            <br> 4.9.3 Functional Requirments
             <br> Request din frontend catre backend.
             <br> Update cookie cu statusul utilizatorului pe 0 (delogat).
             <br> Response de la backend catre frontend si actualizarea componentelor din frontend in urma delogarii.

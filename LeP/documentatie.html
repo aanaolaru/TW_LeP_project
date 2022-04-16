@@ -48,8 +48,13 @@
                     <li> <a href="#chapter3_4"> Communications Interfaces </a></li>
                 </ol>
             </li>
-           
-    </section>
+            <li><a href="#chapter4">  System Features </a>
+                <ol>
+                    <li> <a href="#chapter4_1"> Inregistrare </a> </li>
+                    <li> <a href="#chapter4_2"> Autentificare </a> </li>
+                </ol>
+            </li>
+                </section>
     <div role="contentinfo">
         <dl>
             <dt>Authors</dt>
@@ -232,4 +237,53 @@
                 &nbsp;&nbsp; &nbsp; &nbsp; . Ca si protocoale de comunicare intalnite in cadrul aplicatiei sunt HTTP si FTP ,ultimul fiind folosit in transmiterea statisticilor.
             </p>
         </section> 
+    </section>
+    <section id="chapter4">
+        <h2> 4. System Features </h2>
+    </section>
+    <section id="chapter4_1">
+        <h3> 4.1 Inregistrare </h3>
+        <p>
+            4.1.1 Description and Priority Provide
+            <br> Priority Medium
+            <br> Componenta permite utilizatorului sa se inregistreze pe site folosind un nume de utilizator si o parola.
+            <br>
+            <br> 4.1.2 Stimulus/Response Sequences
+            <br> Utilizatorul apasa click pe casetele unde trebuie introduse datele – Sistemul permite utilizatorului introducerea de text in casetele respective.
+            <br> Utilizatorul introduce text in campurile necesare inregistrarii – Sistemul verifica ca datele introduse sa corespunda campului completat si sa fie corecte.
+            <br> Utilizatorul apasa pe butonul de inregistrare, dar nu a completat toate campurile necesare – Sistemul nu permite inregistrarea si atentioneaza utilizatorul.
+            <br> Utilizatorul apasa pe butonul de inregistrare, iar toate campurile sunt completate corect – Sistemul inregistreaza cu succes utilizatorul in baza de date.
+            <br>
+            <br> 4.1.3 Functional Requirments
+            <br> Preluarea textului din field-urile de input din form-ul de inregistrare.
+            <br> Request de la frontend catre backend si transmiterea datelor din frontend.
+            <br> Accesarea bazei de date din backend si interogarea ei pentru a verifica ca nu exista deja un utilizator cu acelasi nume. In caz afirmativ se vor insera datele noului user in tabela Users.
+            <br> Response de la backend catre frontend si afisarea continutului corespunzator in frontend in functie de response. In cazul in care username-ul exista deja in baza de date se va afisa faptul ca username-ul ales este indisponibil.
+        </p>
+    </section>
+
+    <section id="chapter4_2">
+        <h3> 4.2 Autentificare </h3>
+        <p>
+            4.2.1 Description and Priority Provide
+            <br> Priority Medium
+            <br> Componenta permite utilizatorului sa se logheze pe site folosind un nume de utilizator si o parola.
+            <br>
+            <br> 4.2.2 Stimulus/Response Sequences
+            <br> Utilizatorul apasa click pe casetele unde trebuie introduse datele – Sistemul permite utilizatorului introducerea de text in casetele respective.
+            <br> Utilizatorul apasa pe butonul de logare, dar nu a completat toate campurile necesare – Sistemul nu permite inregistrarea si atentioneaza utilizatorul.
+            <br> Utilizatorul apasa pe butonul de logare, dar introduce un username inexistent in baza de date – Sistemul nu permite logarea si atentioneaza utilizatorul faptul ca a introdus un username inexistent.
+            <br> Utilizatorul apasa pe butonul de logare, dar introduce o parola gresita – Sistemul nu permite logarea si atentioneaza utilizatorul faptul ca a introdus o parola gresita.
+            <br> Utilizatorul apasa pe butonul de logare, iar toate campurile sunt completate corect – Sistemul permite logarea cu succes a utilizatorului pe site.
+            <br>
+            <br> 4.2.3 Functional Requirments
+            <br> Preluarea textului din field-urile de input ale username-ului si parolei.
+            <br> Request din frontend catre backend.
+            <br> Call catre baza de date din backend si interogarea acesteia pentru verificarea existentei user-ului si corectitudinea parolei. Daca datele corespund se interogheaza baza de date din nou pentru a prelua numele si id-urile albumelor personale
+            ale utilizatorului.
+            <br> Response de la backend catre frontend cu datele obtinute in urma interogarii.
+            <br> Afisarea continutului corespunzator si incarcarea componentei ce contine numele utilizatorului pe pagina principala plus numele albumelor salvate in sectiunea “Saved albums” si numele albumelor primite din partajari in sectiunea "Received
+            albums" din meniu.
+            <br> Setarea cookie-urilor.
+        </p>
     </section>

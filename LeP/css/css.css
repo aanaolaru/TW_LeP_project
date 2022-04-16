@@ -18,9 +18,11 @@ body {background-color: #D3B99F;
 
   }
 
+
 /* Style the search box */
 #mySearch {
-    width: 100%;
+  float: left;
+    width: 20%;
     font-size: 18px;
     padding: 11px;
     border: 1px solid #ddd;
@@ -29,6 +31,7 @@ body {background-color: #D3B99F;
   /* Style the navigation menu */
   #myMenu {
     list-style-type: none;
+    width: 20%;
     padding: 0;
     margin: 0;
   }
@@ -45,5 +48,19 @@ body {background-color: #D3B99F;
     background-color: #eee;
   }
   
+  .footer-clean {
+    padding:50px 0;
+    background-color:#F39C6B;
+    color:#4b4c4d;
+  }
+  
+ 
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
   
   

@@ -58,7 +58,9 @@
                     <li> <a href="#chapter4_6"> Footer </a> </li>
                     <li> <a href="#chapter4_7"> Butoane de expandare pentru fiecare componenta hardware</a> </li>
                     <li> <a href="#chapter4_8"> Afisare informatii in sectiunea selectatata </a> </li>
-                    <li> <a href="#chapter4_9"> Deconectare </a> </li>
+                    <li> <a href="#chapter4_9"> Generare clasament al celor mai de succes utilizatori(flux RSS) </a> </li>
+                    <li> <a href="#chapter4_10"> Punctajul final salvat </a> </li>
+                    <li> <a href="#chapter4_11"> Deconectare </a> </li>
                 </ol>
             </li>
                 </section>
@@ -407,16 +409,56 @@
     </section>
 
     <section id="chapter4_9">
-        <h3> 4.9 Deconectare</h3>
+        <h3> 4.9 Generare clasament a celor mai de succes jucatori si download flux RSS</h3>
         <p>
             4.9.1 Description and Priority Provide
+            <br> Priority Medium
+            <br> Dupa parcurgerea celor 3 nivele de dificultate, va exista un buton “Ranking” care va trimite catre o pagina unde se va genera top 30 jucatori in functie de punctajul final obtinut pe fiecare nivel.
+            <br>Pe pagina respectiva va exista un buton "Download RSS data feed" prin care utilizatorul poate downloada clasamentul in format XML.
+            <br>
+            <br> 4.9.2 Stimulus/Response Sequences
+            <br> Utilizatorul apasa pe butonul “Ranking” – Sistemul genereaza clasamentul primilor 30 de jucatori cei mai de succes si incarca pargina corespunzatoare unde se gaseste clasamentul.
+            <br> Utilizatorul apasa pe butonul "Download RSS data feed" - Sistemul genereaza clasamentul in format XML si il ofera spre download.
+            <br>
+            <br> 4.9.3 Functional Requirments
+            <br> Request din frontend catre backend.
+            <br> Accesarea si interogarea bazei de date din backend pentru a selecta animalele cu cele mai multe like-uri.
+            <br> Generarea paginii cu clasamentul conform datelor obtinute in urma interogarii.
+            <br> Generarea documentului in format XML pregatit pentru a fi downloadat.
+        </p>
+    </section>
+
+    <section id="chapter4_10">
+        <h3> 4.15 Punctajul final salvat</h3>
+        <p>
+            4.10.1 Description and Priority Provide
+            <br> Priority Medium
+            <br> Componenta permite utilziatorului logat vizualizarea si afisarea punctajului final acumulat.
+            <br>
+            <br> 4.10.2 Stimulus/Response Sequences
+            <br> Userul apasa pe lista de tip dropdown din sectiunea “Final score” – Sistemul afiseaza punctajele salvate ale utilizatorului pentru fiecare nivel de care a trecut si ii permite selectarea unuia.
+            <br> Userul selecteaza unul dintre nivele si apasa pe butonul “Show score” – Sistemul afiseaza scorul nivelului selectat.
+            <br>
+            <br> 4.10.3 Functional Requirments
+            <br> Incarcarea punctajelor salvate in sectiunea "Saved final score" specifice userului logat atunci cand se acceseaza pagina principala a site-ului.
+            <br> Request din frontend catre backend.
+            <br> Accesarea si interogarea bazei de date din backend pentru a selecta punctajul corespunzator nivelului dorit.
+            <br> Response de la backend catre frontend cu datele obtinute in urma interogarii.
+            <br> Crearea componentelor de afisat in frontend, in functie de datele primite de la backend.
+        </p>
+    </section>
+
+    <section id="chapter4_11">
+        <h3> 4.9 Deconectare</h3>
+        <p>
+            4.11.1 Description and Priority Provide
             <br> Priority Low
             <br> Componenta permite unui utilizator logat sa se delogheze de pe site.
             <br>
-            <br> 4.9.2 Stimulus/Response Sequences
+            <br> 4.11.2 Stimulus/Response Sequences
             <br> Userul apasa pe butonul “Log out” – Sistemul delogheaza utilizatorul de pe site.
             <br>
-            <br> 4.9.3 Functional Requirments
+            <br> 4.11.3 Functional Requirments
             <br> Request din frontend catre backend.
             <br> Update cookie cu statusul utilizatorului pe 0 (delogat).
             <br> Response de la backend catre frontend si actualizarea componentelor din frontend in urma delogarii.

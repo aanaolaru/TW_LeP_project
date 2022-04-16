@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="author" content="Popa Ioana">
+    <meta name="author" content="Olaru Ana">
+    <title> LeP Documentation</title>
+    <link rel="stylesheet" href="doc.css">
+
+</head>
+
+<body prefix="schema: http://schema.org">
+    <header>
+        <h1> LeP Documentation </h1>
+    </header>
+    <section class="chapters">
+        <ol>
+            
+            <li>
+                <a href="#chapter1"> Introduction </a>
+                <ol>
+                    <li> <a href="#chapter1_1"> Purpose  </a> </li>
+                    <li> <a href="#chapter1_2"> Document Conventions </a> </li>
+                    <li> <a href="#chapter1_3"> Intended Audience and Reading Suggestions </a> </li>
+                    <li> <a href="#chapter1_4"> Product Scope </a> </li>
+                    <li> <a href="#chapter1_5"> References </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#chapter2">  Overall Description </a>
+                <ol>
+                    <li> <a href="#chapter2_1"> Product Perspective </a> </li>
+                </ol>
+             </li>
+           
+    </section>
+    <div role="contentinfo">
+        <dl>
+            <dt>Authors</dt>
+            <dd>
+                Popa Ioana
+            </dd>
+            <dd>
+                Olaru Ana
+            </dd>
+           
+        </dl>
+    </div>
+    
+    <section id="chapter1">
+        <h2> 1. Introduction</h2>
+        <section id="chapter1_1">
+            <h3> 1.1 Purpose </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;<strong>SRS </strong>(<strong>S</strong>oftware <strong>R</strong>equirements <strong>S</strong>pecification) este un document ce proiecteza prin specificatiile concrete oferite de dezvoltatori, un sistem software, mai exact un suport de invatare a componentelor unui computer,care urmeaza a fi dezvoltat pe baza rapoartelor descrise in cadrul acestuia,totodata ajutand la o mai buna sincronizare a membrilor echipei in vederea obtinerii produsului final. Domeniu de aplicare este WEB-ul, produsul indreptandu-se spre o arie informationala si educativa.
+
+
+            </p>
+        </section>
+        <section id="chapter1_2">
+            <h3> 1.2 Document conventions </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Documentul a fost realizat utilizand sintaxa HTML (pentru creearea paginii Web) + CSS(stilizare la nivel de pagina web : culori, dimensiuni,sapatiere,font,spatiere dintre elemente).
+            
+                <br> &nbsp; &nbsp; &nbsp; &nbsp; De asemenea, in vederea structurarii intregului schelet se foloseste o lista ordonata in HTML, cat si bookmark-uri cu link-uri care te trimit prin click la un id de pe pagina.
+
+            </p>
+        </section>
+        <section id="chapter1_3">
+            <h3> 1.3 Intended Audience and Reading Suggestions </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;Acest SRS este dedicat cu precadere dezvoltatorilor aplicatiei WEB, dar poate fi accesat si de utlizatorii aplicatiei.
+                <br>&nbsp; &nbsp; &nbsp; &nbsp;In cazul dezvoltatorilor aplicatiei WEB este recomandata pracurgerea intregului material, categorie cu categorie, pentru a se reusi o sincronizare la nivel de echipa, pentru a intelege cerintele proiectului
+                si pentru a avea acces la toate tehnologiile utilizate pe diferite sectoare de lucru (backend, frontend, database connection etc. ) ca la final sa fie asigurata functionalitatea produsului. &nbsp; &nbsp; &nbsp; &nbsp;Utilizatorilor le este
+                recomandata accesarea categoriei Introduction, subpunctele Product Scope si Product Functions, pentru a se familiariza cu conceptul aplicatiiei , scopul si functionalitatile de care acestia pot beneficia.
+
+            </p>
+        </section>
+        <section id="chapter1_4">
+            <h3> 1.4 Product Scope </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;        Proiectul <strong>LeP - Learning by Playing Games</strong> are drept scop final realizarea unei aplicatii web, mai exact a unei platforme ce ofera utilizatorului o serie de functionalitati. Acesta poate sa vizualizeze sectia de invatare unde se poate documenta si poate studia despre fiecare componenta a calculatorului ca mai apoi sa rezolve o serie de teste in care sa isi verifice cunostiintele .Se va crea  un clasament al celor mai studiosi utilizatori pe baza punctajelor obtinute la fiecare test .
+
+            </p>
+        </section>
+        <section id="chapter1_5">
+            <h3> 1.5 References </h3>
+            <p>
+                Link-uri :
+                <br> https://en.wikipedia.org/wiki/Software_requirements_specification
+                <br> https://github.com/rick4470/IEEE-SRS-Tempate
+                <br> https://www.geeksforgeeks.org/software-requirement-specification-srs-format/
+                <br> https://relevant.software/blog/software-requirements-specification-srs-document/
+
+            </p>
+        </section>
+    </section>
+
+    <section id="chapter2">
+        <h2> 2. Overall Description </h2>
+        <section id="chapter2_1">
+            <h3> 2.1 Product Perspective </h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Produsul final este o platforma educativa, mai exact o aplicatie web (open-source) ce functioneaza independent si este destinata uzului general. Fiind o aplicatie open-source, se presupune a fi utilizata de un numar nelimitat
+                de useri, incluzand si un sistem de logare,ce aduce o serie de functionalitati in plus. Componentele majore ale aplicatie sunt doua : FRONTEND si BACKEND.
+                <br> &nbsp; &nbsp; &nbsp; &nbsp;Partea de FRONT (HTML,CSS,JavaScript) face legatura cu user-ul,prin intermediul ei acesta poate vedea si interactiona cu WEB sever-ul, beneficiind astfel de toate functionalitatile aplicatiei. &nbsp; &nbsp;
+                <br>&nbsp; &nbsp; &nbsp; &nbsp;Partea de BACK(Node.js, Typescript, Typeorm) asigura corectitudinea functionalitatilor, fiind zona de implementare propriu-zisa. Desigur, ca modalitate de stocare a datelor ce intra in componenta produsului,
+                este folosita o baza de date MySQL.
+                <br> Atasez diagrama aplicatiei ce ilustreaza componentele principale din care este alcatuita :
+                <div class="mxgraph" style="max-width:130%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;Electron\&quot; modified=\&quot;2021-04-01T16:13:54.314Z\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.4.3 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36\&quot; etag=\&quot;PzsMiJq3R2HyJdykBY5f\&quot; version=\&quot;14.4.3\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;GmiwDMexxhOpCZKFl61L\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+                <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+            </p>
+        </section>
+        

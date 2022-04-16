@@ -56,13 +56,15 @@
                     <li> <a href="#chapter4_4"> Bara de navigatie </a> </li>
                     <li> <a href="#chapter4_5"> Header </a> </li>
                     <li> <a href="#chapter4_6"> Footer </a> </li>
-                    <li> <a href="#chapter4_7"> Butoane de expandare pentru fiecare componenta hardware</a> </li>
-                    <li> <a href="#chapter4_8"> Afisare informatii in sectiunea selectatata </a> </li>
-                    <li> <a href="#chapter4_9"> Generare sectiuni de reguli pentru joc </a> </li>
-                    <li> <a href="#chapter4_10"> Nivele de dificultate ale jocului </a> </li>
-                    <li> <a href="#chapter4_11"> Generare clasament al celor mai de succes utilizatori(flux RSS) </a> </li>
-                    <li> <a href="#chapter4_12"> Punctajul final salvat </a> </li>
-                    <li> <a href="#chapter4_13"> Deconectare </a> </li>
+                    <li> <a href="#chapter4_7"> Deconectare </a> </li>
+                </ol>
+            </li>
+            <li> <a href="#chapter5"> Other Nonfunctional Requirements </a>
+                <ol>
+                    <li> <a href="#chapter5_1">Performance Requirements </a></li>
+                    <li> <a href="#chapter5_2">Safety Requirements </a></li>
+                    <li> <a href="#chapter5_3">Security Requirements </a></li>
+                    <li> <a href="#chapter5_4">Software Quality Attributes </a> </li>
                 </ol>
             </li>
                 </section>
@@ -370,147 +372,41 @@
     </section>
 
     <section id="chapter4_7">
-        <h3> 4.7 Butoane de expandare pentru fiecare componenta hardware</h3>
+        <h3> 4.7 Deconectare</h3>
         <p>
             4.7.1 Description and Priority Provide
             <br> Priority Low
-            <br> Componenta permite utilizatorilor selectarea si vizualizarea numelui uneia dintre cele 10 componente hardware specifice unui calculator:
-             CPU, random access memory (RAM), monitor, mouse, tastatura, computer data storage, graphics card, sound card, speakers si motherboard.
-            <br>
-            <br> 4.7.2 Stimulus/Response Sequences
-            <br> Utilizatorul selecteaza unul dintre butoanele de expandare in functie de componenta hardware despre care doreste sa studieze – Sistemul permite utilizatorului sa expandeze un singur buton, cu alte cuvinte nu poate invata despre mai multe componente in acelasi timp.
-            <br>
-            <br> 4.7.3 Design
-            <br> Aceste butoane sunt plasate in sectiunea de "Learn", imediat dupa o scurta descriere despre importanta componentelor hardware.
-            <br> Designul butoanelor a fost gandit in asa fel incat acestea sa se afle in centrul paginii, unul dupa altul, pentru a atrage atentia utilizatorului. 
-            <br> De aceea culoarea aleasa a fost <b>#664147</b>, cea mai inchisa din paleta de culori descrisa mai sus. 
-            <br>Titlul de pe fiecare buton "-numele componentei- -> Start learning", este scris cu font "Pristina", 30px, alb, pentru a arata mai elegant in comparatie cu restul textului de pe pagina. 
-            <br>De asemenea s-a folosit un text-shadow pentru aceste titluri putin mai inchis decat culoarea butoanelor cu scop de accentuare.
-            <br> Butoanele au box-shadow negru pentru a da aspectul unui buton real iar la capatul lor apare un "<b>+</b>" pentru a evidentia faptul ca
-            <br>prin apasarea butonului respectiv, sectiunea se expandeaza, oferind acces utilizatorilor la informatii.  
-            <br>
-        </p>
-    </section>
-
-    <section id="chapter4_8">
-        <h3> 4.8 Afisare informatii in sectiunea selectata </h3>
-        <p>
-            4.8.1 Description and Priority Provide
-            <br> Priority Medium
-            <br> Componenta permite utilizatorului sa "scrolleze" pentru o cantitate mai mare de informatie.
-            <br>
-            <br> 4.8.2 Design
-            <br> In acest moment utilizatorul incepe procesul de invatare, fiind ajutat de multitudinea de imagini specifice fiecarei componente, gifuri cu demonstratii ale functionalitatilor,
-             <br>text subliniat, italic, boldat, pentru a ajuta observarea detaliilor mai importante. Unele imagini si gifuri sunt asezate in partea dreapta a sectiunii iar alaturi, in partea stanga,
-             <br>apare informatia. Astfel, utilizatorul poate sa vizualizeze scrisul si imaginea in acelasi timp si isi simplifica treaba. Fontul a fost ales de culoare alba din moment ce backgroundul 
-             <br>sectiunii expandate este de culoare inchisa.
-            <br>
-            <br> 4.8.3 Functional Requirments
-            <br> Aranjarea informatiei in pagina in functie de dorinta utilizatorului.
-        </p>
-    </section>
-
-   <section id="chapter4_9">
-        <h3> 4.9 Generare sectiuni de reguli pentru joc </h3>
-        <p>
-            4.9.1 Description and Priority Provide
-            <br> Priority High
-            <br> Aceasta sectiune a fost pusa pentru ca jucatorul sa nu inceapa direct rezolvarea testelor, ci sa fie instiintat de anumite reguli
-            <br>in caz ca se razgandeste si vrea sa paraseasca jocul.
-            <br> 4.9.2 Stimulus/Response Sequences
-            <br> La apasarea butonului "Game" din navigation bar, utilizatorul este introdus intr-o sectiune introductiva de dinaintea inceperii jocului in care sunt puse la dispozitie informatiile de care trebuie sa tina cont.
-            <br> In partea dreapta jos a acestei sectiuni de informatii sunt doua butoane: 
-            <br>"Start quiz" - jucatorul este introdus pe pagina primului nivel
-            <br>"Exit quiz" - jucatorul ajunge la pagina principala (nu doreste continuarea jocului)
-            <br> 4.9.3 Design
-            <br> Designul sectiunii este gandit ca un dreptunghi (box) cu colturile rotunjite (border-radius: 10px) asezat pe mijlocul paginii, cu box-shadow negru ca sa iasa in evidenta.
-            <br> Cele doua butoane descrise mai sus au border destul de gros: 6px de culoare <b>#664147</b> pentru ca s-a dorit sa fie evidentiate mai mult decat sectiunea de informatii. 
-            <br> De aceea si textul a fost ales cu o dimensiune mai mare(20px) comparativ cu detaliile din dreptunghi(15px). La "trecerea" cu mouseul peste ele,
-            <br>se observa ca acestea isi maresc putin dimensiunea(transform: scale(1.1)) cu o tranzitie de 0.3s si se coloreaza la fel ca borderul. De asemenea textul devine din negru alb.
-        </p>
-    </section>
-
-     <section id="chapter4_10">
-        <h3> 4.10 Nivele de dificultate ale jocului</h3>
-        <p>
-            4.10.1 Description and Priority Provide
-            <br> Utilizatorii pot rezolva in total 3 teste: usor(level 1), mediu(level 2), greu(level 3).
-            <br>"Level 1" - Jucatorul rezolva 10 grile simple cu o singura varianta de raspuns. Timp: 300 secunde
-            <br>"Level 2" - Jucatorul rezolva 10 grile cu variante multiple de raspuns. Timp: 500 secunde
-            <br>"Level 3" - Jucatorul raspunde la 10 intrebari scriind raspunsul (un singur cuvant) in cadranul de text. Timp: 600 secunde
-            <br> Priority High
-            <br>
-            <br> 4.10.2 Stimulus/Response Sequences
-            <br> Utilizatorul apasa pe butonul “Start quiz” – Sistemul afiseaza pagina primului nivel iar temporizatorul incepe numararea inversa a secundelor.
-            <br> Sistemul verifica ca datele (raspunsurile) introduse de jucator sa fie corecte si sa existe in baza de date, iar in functie de acest aspect punctajul pe fiecare nivel este calculat si adunat la punctajul final.
-            <br> Pe parcursul rezolvarii unui nivel, jucatorul nu poate sa paraseasca jocul indiferent de butonul apasat pentru ca trebuie sa termine completarea raspunsurilor si submisia
-            <br> La finalul testului, prin apasarea butonului "Submit", scorul este afisat.
-            <br> Sub scor este butonul "Next level" care permite jucatorului trecerea la urmatorul nivel doar in momentul in care si-a aflat punctajul.
-            <br> 
-            <br> 4.10.3 Design 
-            <br> Butoanele "Next level" si "Submit" au designul la fel ca cele descrise in capitolul <it>4.9.3</it> cu exceptia faptului ca a fost ales un background albastru iar latimea este mai mare (width: 80%) pentru a se sugera importanta lor.
-            <br> Pentru backgroundul nivelelor s-a ales culoarea cea mai inchisa din paleata de culori pentru ca jucatorul sa nu oboseasca vizual si sa se concentreze pe test.
-            <br> 
-            <br> 4.10.0 Functional Requirments
-            <br> Selectarea datelor introduse si validarea acestora. In urma validarii datele vor fi trimise catre backend.
-            <br> Selectarea variantelor de raspuns/cuvintelor introduse pe care utilizatorul doreste sa il/le considere ca raspuns corect la intrebarile primite si trimiterea acestora catre backend.
-            <br> Accesarea din backend a bazei de date si efectuarea operatiilor necesare pentru ca scorul respectiv sa apara.
-            <br> Afisarea unui scor (cuprins intre 1 si 10 puncte) dupa submiterea fiecarui test.
-    </section>
-
-    <section id="chapter4_11">
-        <h3> 4.11 Generare clasament a celor mai de succes jucatori si download flux RSS</h3>
-        <p>
-            4.11.1 Description and Priority Provide
-            <br> Priority High
-            <br> Dupa parcurgerea celor 3 nivele de dificultate, va exista un buton “Ranking” care va trimite catre o pagina unde se va genera top 30 jucatori in functie de punctajul final obtinut pe fiecare nivel.
-            <br>Pe pagina respectiva va exista un buton "Download RSS data feed" prin care utilizatorul poate downloada clasamentul in format XML.
-            <br>
-            <br> 4.11.2 Stimulus/Response Sequences
-            <br> Utilizatorul apasa pe butonul “Ranking” – Sistemul genereaza clasamentul primilor 30 de jucatori cei mai de succes si incarca pargina corespunzatoare unde se gaseste clasamentul.
-            <br> Utilizatorul apasa pe butonul "Download RSS data feed" - Sistemul genereaza clasamentul in format XML si il ofera spre download.
-            <br>
-            <br> 4.11.3 Functional Requirments
-            <br> Request din frontend catre backend.
-            <br> Accesarea si interogarea bazei de date din backend pentru a selecta animalele cu cele mai multe like-uri.
-            <br> Generarea paginii cu clasamentul conform datelor obtinute in urma interogarii.
-            <br> Generarea documentului in format XML pregatit pentru a fi downloadat.
-        </p>
-    </section>
-
-    <section id="chapter4_12">
-        <h3> 4.15 Punctajul final salvat</h3>
-        <p>
-            4.12.1 Description and Priority Provide
-            <br> Priority High
-            <br> Componenta permite utilziatorului logat vizualizarea si afisarea punctajului final acumulat.
-            <br>
-            <br> 4.12.2 Stimulus/Response Sequences
-            <br> Userul apasa pe lista de tip dropdown din sectiunea “Final score” – Sistemul afiseaza punctajele salvate ale utilizatorului pentru fiecare nivel de care a trecut si ii permite selectarea unuia.
-            <br> Userul selecteaza unul dintre nivele si apasa pe butonul “Show score” – Sistemul afiseaza scorul nivelului selectat.
-            <br>
-            <br> 4.12.3 Functional Requirments
-            <br> Incarcarea punctajelor salvate in sectiunea "Saved final score" specifice userului logat atunci cand se acceseaza pagina principala a site-ului.
-            <br> Request din frontend catre backend.
-            <br> Accesarea si interogarea bazei de date din backend pentru a selecta punctajul corespunzator nivelului dorit.
-            <br> Response de la backend catre frontend cu datele obtinute in urma interogarii.
-            <br> Crearea componentelor de afisat in frontend, in functie de datele primite de la backend.
-        </p>
-    </section>
-
-    <section id="chapter4_13">
-        <h3> 4.13 Deconectare</h3>
-        <p>
-            4.13.1 Description and Priority Provide
-            <br> Priority Low
             <br> Componenta permite unui utilizator logat sa se delogheze de pe site.
             <br>
-            <br> 4.13.2 Stimulus/Response Sequences
+            <br> 4.16.2 Stimulus/Response Sequences
             <br> Userul apasa pe butonul “Log out” – Sistemul delogheaza utilizatorul de pe site.
             <br>
-            <br> 4.13.3 Functional Requirments
+            <br> 4.16.3 Functional Requirments
             <br> Request din frontend catre backend.
             <br> Update cookie cu statusul utilizatorului pe 0 (delogat).
             <br> Response de la backend catre frontend si actualizarea componentelor din frontend in urma delogarii.
+
         </p>
+        
     </section>
+    <section id="chapter5">
+        <h2> 5. Other Nonfunctional Requirements </h2>
+        <section id="chapter5_1">
+            <h3> 5.1 Performance Requirements </h3>
+            <p>
+                Se va dori ca filtrarea componentelor, cautarea acestora, afisarea sa se realizeze cat mai rapid. Prin urmare se va opta pentru imagini de tip .jpg / .jpeg care se pot incarca
+                rapid, iar baza de date va fi conceputa in asa fel incat sa sprijine rapiditate request-urilor de date.
+            </p>
+        </section>
+        <section id="chapter5_2">
+            <h3> 5.2 Safety Requirements</h3>
+            <p>
+                Nu vor fi adaugate imagini sau informatii cu impact emotional asupra utilizatorilor.
+            </p>
+        </section>
+        <section id="chapter5_3">
+            <h3> 5.3 Security Requirements </h3>
+            <p>
+                Se va recurge la tehnici de prevenire a atacurilor precum SQL injection, iar parolele utilizatorilor vor fi hashuite in baza de date.
+            </p>
+        </section>

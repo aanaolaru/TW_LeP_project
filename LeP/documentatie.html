@@ -440,13 +440,16 @@
             <br>
             <br> 4.7.3 Design
             <br> Aceste butoane sunt plasate in sectiunea de "Learn", imediat dupa o scurta descriere despre importanta componentelor hardware.
-            <br> Designul butoanelor a fost gandit in asa fel incat acestea sa se afle in centrul paginii, unul dupa altul, pentru a atrage atentia utilizatorului. 
+            <br> Designul butoanelor a fost gandit in asa fel incat acestea sa se afle in centrul paginii, unul sub altul, pentru a atrage atentia utilizatorului. 
             <br> De aceea culoarea aleasa a fost <b>#664147</b>, cea mai inchisa din paleta de culori descrisa mai sus. 
-            <br>Titlul de pe fiecare buton "-numele componentei- -> Start learning", este scris cu font "Pristina", 30px, alb, pentru a arata mai elegant in comparatie cu restul textului de pe pagina. 
+            <br>Titlul de pe fiecare buton "-numele componentei- -> Start learning", este scris cu font "Pristina", 30px, alb, pentru a arata mai elegant in comparatie cu restul textului de pe pagina('Poppins',sans-serif). 
             <br>De asemenea s-a folosit un text-shadow pentru aceste titluri putin mai inchis decat culoarea butoanelor cu scop de accentuare.
              <br> Butoanele au box-shadow negru cu o rotunjire la colturi (border radius) de 0.4rem, pentru a da aspectul unui buton real iar la capatul lor apare un "<b>+</b>" pentru a evidentia faptul ca
             <br> prin apasarea butonului respectiv, sectiunea se expandeaza, oferind acces utilizatorilor la informatii.  
-            <br> Fiecare buton este plasat intr-o sectiune dreptunghiulara cu fundalul <b>#6d98ba</b> pentru ca nu am vrut ca utilizatorul sa vada niste simple butoane puse unele dupa altele. Aceasta sectiune pe care este"asezat" butonul se expandeaza de asemenea la clickul pe buton.
+            <br> Fiecare buton este plasat intr-o sectiune dreptunghiulara cu fundalul <b>#6d98ba</b> pentru ca nu am vrut ca utilizatorul sa vada niste simple butoane puse unele sub altele. Aceasta sectiune pe care este"asezat" butonul se expandeaza de asemenea la clickul pe buton.
+            <br>
+            <br> 4.8.3 Functional Requirments
+            <br> Click pe buton pentru a avea acces la informatia despre o componenta, altfel nu se poate incepe studiul iar dupa participarea la test userul va obtine un punctaj slab.
         </p>
     </section>
 
@@ -459,7 +462,7 @@
             <br>
             <br> 4.8.2 Design
             <br> In acest moment utilizatorul incepe procesul de invatare, fiind ajutat de multitudinea de imagini specifice fiecarei componente, gifuri cu demonstratii ale functionalitatilor,
-            <br>text subliniat, italic, boldat, pentru a ajuta observarea detaliilor mai importante. Unele imagini si gifuri sunt asezate in partea dreapta a sectiunii iar alaturi, in partea stanga,
+            <br>text subliniat, italic, boldat, pentru a ajuta observarea detaliilor mai importante. Unele imagini si gifuri sunt asezate in partea dreapta a sectiunii(float:right; margin-left:20xp) iar alaturi, in partea stanga,
             <br>apare informatia. Astfel, utilizatorul poate sa vizualizeze scrisul si imaginea in acelasi timp si isi simplifica treaba. Fontul a fost ales de culoare alba din moment ce backgroundul 
             <br>sectiunii expandate este de culoare inchisa pentru ca se doreste ca userul sa vizualizeze mai bine informatia.
             <br>In partea opusa a scrollului (adica partea stanga), am adaugat o linie verticala de latime .6rem care incepe din varful sectiunii cu informatie iar ideea a fost sa se ofere aspectul unei dungi de "highlight" (de aceea s-a ales culoarea #F39C6B). 
@@ -479,16 +482,21 @@
             <br>
             <br> 4.9.2 Stimulus/Response Sequences
             <br> La apasarea butonului "Test" din navigation bar, utilizatorul este introdus intr-o sectiune introductiva de dinaintea inceperii jocului in care sunt puse la dispozitie informatiile de care trebuie sa tina cont.
-            <br> In partea dreapta jos a acestei sectiuni de informatii sunt doua butoane: 
+            <br> In partea dreapta jos, imediat sub sectiunea de informatii, sunt doua butoane: 
             <br>"Start quiz" - jucatorul este introdus pe pagina primului nivel
             <br>"Exit quiz" - jucatorul ajunge la pagina principala (nu doreste continuarea jocului)
             <br>
             <br> 4.9.3 Design
-            <br> Designul sectiunii este gandit ca un dreptunghi (box) cu colturile rotunjite (border-radius: 10px) asezat pe mijlocul paginii (background pagina:<b>#6d98ba</b>), cu box-shadow negru ca sa iasa in evidenta.
+            <br> Designul sectiunii este gandit ca un dreptunghi (box) cu colturile rotunjite (border-radius: 10px) asezat pe mijlocul paginii (de accea am ales top:50% si left:50%) (background pagina:<b>#6d98ba</b>), cu box-shadow negru ca sa iasa in evidenta.
             <br> Cele doua butoane descrise mai sus au border destul de gros: 6px de culoare <b>#664147</b> pentru ca s-a dorit sa fie evidentiate mai mult decat sectiunea de informatii. 
             <br> De aceea si textul a fost ales cu o dimensiune mai mare(20px) comparativ cu detaliile din dreptunghi(15px). La "trecerea" cu mouseul peste ele,
             <br>se observa ca acestea isi maresc putin dimensiunea(transform: scale(1.1)) cu o tranzitie de 0.3s si se coloreaza la fel ca borderul. De asemenea textul devine din negru alb.
-        </p>
+            <br>Pentru anumite "cuvinte cheie" din interirul sectiunii am folosit font-weight: 600; color: #fcaf83; text-shadow: 0px 0px 3px #000000 pentru a ajuta userul sa memoreze vizual detaliile de baza.      
+            <br>
+            <br> 4.8.3 Functional Requirments
+            <br> Atentionarea, instiintarea utilizatorului cu privire la respectarea unor conditii.
+            <br> Nerespectarea acestora poate duce la erori cum ar fi neafisarea punctajului final sau incapacitatea de selectare a unor raspunsuri din cadrul testelor. In aceste conditii, utilizatorul nu va aparea in clasamentul final.
+       </p>
     </section>
 
      <section id="chapter4_10">

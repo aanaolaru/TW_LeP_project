@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn</title>
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/logo_style.css">
+    <link rel="stylesheet" href="css/style_game.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="img/logo-color.png" width="10%" height="8%" title="Play&Learn" class="picRight"></a>
+        <h1>WELCOME TO LEP</h1>
+            <p style= "font-size: 20px;">-the page where you will discover everything about computers-</p>
+            <p style="font-family: Pristina;font-size: 20px;">Are you ready?Let's get started!</p>
+        <ul1>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="home.html">Home </a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="learn.html">Learn</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Test</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Ranking</a></li>
+            <input style="float: left; width: 15%; font-size: 18px;padding: 11px; border: 1px solid #ddd;" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        </ul1>
+    </header>
+    
+
+
+
+
+
+    
+    
+    <script type ="text/javascript">
+         window.addEventListener("scroll",function(){
+             var header=document.querySelector("header");
+             header.classList.toggle("sticky",window.scrollY >0);
+         })
+    </script>
+    
+    <hr><hr>
+    
+    <nav style="background: #ba7883;" >
+        <table cellspacing="18" cellpadding="'18">
+            <tr>
+                <td><a href="home.html"> </a></td>
+                <td><a href="learn.html"></a></td>
+                <td><a href="game.html"></a></td>
+                <td><a href="ranking.html"></a></td>
+            </tr>
+        </table>
+    </nav>
+    <hr><hr>
+
+    <div class="info_box">
+        <div class="info-title">Welcome to the Quiz Game</div>
+        <div class="info-list">
+            <div class="info">Put your knowledge to the test with this fun quiz!</div>
+            <div class="info">You will have to pass <span>3 levels</span> in order to see the ranking and your position in it. <p>Each level has a certain difficulty: <span>easy</span>, <span>medium</span> and <span>hard</span> .</p></div>
+            <div class="info">Consider the rules at the beginning of each level and read each question carefully choosing / writing the response that you feel is correct. <p>For each level there are <span>10 questions</span>. After submiting, you will receive a score that will be added to the final score.</p></div>
+            <div class="info">There is a specific time for each level which will appear permanently in the upper left corner so that you know all the time how many seconds you have left to solve.</div>
+        </div>
+       
+    </div>
+
+<div class="buttons">
+        <a href="home.html"><button class="quit">Exit Quiz</button>
+        <a href="level1.html"><button class="restart">Start Quiz</button></a>
+    </div>

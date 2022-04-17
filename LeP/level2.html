@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn</title>
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/logo_style.css">
+    <link rel="stylesheet" href="css/style_levels.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="img/logo-color.png" width="10%" height="8%" title="Play&Learn" class="picRight"></a>
+        <h1>WELCOME TO LEP</h1>
+            <p style= "font-size: 20px;">-the page where you will discover everything about computers-</p>
+            <p style="font-family: Pristina;font-size: 20px;">Are you ready?Let's get started!</p>
+        <ul1>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="home.html">Home </a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="learn.html">Learn</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Test</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Ranking</a></li>
+            <input style="float: left; width: 15%; font-size: 18px;padding: 11px; border: 1px solid #ddd;" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        </ul1>
+    </header>
+    
+    
+    <script type ="text/javascript">
+         window.addEventListener("scroll",function(){
+             var header=document.querySelector("header");
+             header.classList.toggle("sticky",window.scrollY >0);
+         })
+    </script>
+    
+    <hr><hr>
+    
+    <nav style="background: #ba7883;" >
+        <table cellspacing="18" cellpadding="'18">
+            <tr>
+                <td><a href="home.html"> </a></td>
+                <td><a href="learn.html"></a></td>
+                <td><a href="game.html"></a></td>
+                <td><a href="ranking.html"></a></td>
+            </tr>
+        </table>
+    </nav>
+    <hr><hr>
+
+
+    <h1 style="text-align: center; margin-top: 5ch;"><img src="img/quiz2.gif" height="10%" width="10%"></h1>
+
+    <div class="timer_box ">
+        <section1>
+      
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">500</div>
+            </div>
+            <div class="time_line"></div>
+        </section1>
+
+
+    <div class="rules_box">
+        <section2>
+        <div class="rules-title"><span>The rules of the Quiz:</span></div>
+        <div class="rules-list">
+            <div class="info">1. You have only <span>500 seconds</span> to solve the quiz</div>
+            <div class="info">2. You can't select any option once time goes off.</div>
+            <div class="info">3. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">4. You'll get points on the basis of your correct answers.</div>
+            <div class="info">5. Be careful, these are <span>multiple choice</span> questions .</div>
+            <div class="info">6. Each question has <span>3 points</span> .</div>
+            <div class="info" style="padding: 0.1cm;"><span><i>Good luck !</i></span> </div>
+        </div>
+    </section2>
+ 
+
+   
+            
+    <div class=" container">
+        <section id="p0">
+            <h6>1. What are the causes of overheating of microprocessor?</h6>
+            <label>
+                <input type="checkbox" value="1" name="p0" > Processor fan may not be properly connected
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p0" > Files may be not stored in consecutive clusters
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p0" >  Heat sink may be not contacted with the processor
+            </label>
+            <label>
+                <input type="checkbox" value="4" name="p0" >  Jumpers may be configured to over clock the CPU
+            </label>
+        </section>
+
+        <section id="p1">
+            <h6>2.  In a computer keyboard the Alt, Ctrl, Shift, Del & Insert keys are known as</h6>
+            <label>
+                <input type="checkbox" value="1" name="p1" > Function keys
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p1" >Navigation keys
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p1" > Special purpose keys
+            </label>
+        </section>
+
+        <section id="p2">
+            <h6>3. Modem is used for:</h6>
+            <label>
+                <input type="checkbox" value="1" name="p2" > Modulation
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p2" > Supply DC power
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p2" > Demodulation
+            </label>
+        </section>
+
+        <section id="p3">
+            <h6>4. Which of the following components are attached to a motherboard?</h6>
+            <label>
+                <input type="checkbox" value="1" name="p3" > Peripherals
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p3" > Network cards
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p3" >  Multimedia speakers
+            </label>
+            <label>
+                <input type="checkbox" value="4" name="p3" >  Audio cards
+            </label>
+            <label>
+                <input type="checkbox" value="5" name="p3" >  Display adapter
+            </label>
+        </section>
+        
+        <section id="p4">
+            <h6>5. A stowable rack mount monitor is ___ high:</h6>
+            <label>
+                <input type="checkbox" value="1" name="p4" > 1U
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p4" > 2U
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p4" > 3U
+            </label>
+            <label>
+                <input type="checkbox" value="4" name="p4" > 6U
+            </label>
+        </section>
+
+        <section id="p5">
+            <h6>6. Some uses of RAM: </h6>
+            <label>
+                <input type="checkbox" value="1" name="p5" > Clock speed
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p5" > Virtual Memory
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p5" > RAM disk
+            </label>
+        </section>
+
+        <section id="p6">
+            <h6>7. Which are components of a sound card?</h6>
+            <label>
+                <input type="checkbox" value="1" name="p6" > S/PDIF Out
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p6" > Registers
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p6" > S/PDIF In
+            </label>
+            <label>
+                <input type="checkbox" value="4" name="p6" > Line Out Rear
+                
+            </label>
+            <label>
+                <input type="checkbox" value="5" name="p6" > Light holes
+            </label>
+        </section>
+
+        <section id="p7">
+            <h6>8. What would you ask to determine if the display is working?</h6>
+            <label>
+                <input type="checkbox" value="1" name="p7" >Is there a video cursor or action on the screen?
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p7" > Did the computer beep or chime?
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p7" > Is there high voltage static on the screen
+            </label>
+            <label>
+                <input type="checkbox" value="4" name="p7" > All of the above
+            </label>
+            <label>
+                <input type="checkbox" value="5" name="p7" > None of the above
+            </label>
+        </section>
+
+        <section id="p8">
+            <h6>9. During boot-up, the memory test:</h6>
+            <label>
+                <input type="checkbox" value="1" name="p8"> Is a superfluous step that should be ignored
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p8" > Displays what memory is installed, but nothing else
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p8" >  Checks and verifies that contiguous memory is installed
+            </label>
+        </section>
+
+        <section id="p9">
+            <h6>10. Some devices can use a:</h6>
+            <label>
+                <input type="checkbox" value="1" name="p9" > Quad-core processor
+            </label>
+            <label>
+                <input type="checkbox" value="2" name="p9" > Single-core processor
+            </label>
+            <label>
+                <input type="checkbox" value="3" name="p9">  None of the above
+            </label>
+        </section>
+
+        <button><i>Submit</i></button>
+        <p style="color:#ffbf9b; text-align: center; font-size: 1.4rem;">Score: <span id="results"></span></p>
+        <a href="level3.html"><button>Next level</button></a>
+    </div>
+   
+</body>
+</html> 

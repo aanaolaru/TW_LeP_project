@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn</title>
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/logo_style.css">
+    <link rel="stylesheet" href="css/style_levels.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="img/logo-color.png" width="10%" height="8%" title="Play&Learn" class="picRight"></a>
+        <h1>WELCOME TO LEP</h1>
+            <p style= "font-size: 20px;">-the page where you will discover everything about computers-</p>
+            <p style="font-family: Pristina;font-size: 20px;">Are you ready?Let's get started!</p>
+        <ul1>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="home.html">Home </a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="learn.html">Learn</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Test</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Ranking</a></li>
+            <input style="float: left; width: 15%; font-size: 18px;padding: 11px; border: 1px solid #ddd;" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        </ul1>
+    </header>
+    
+    
+    <script type ="text/javascript">
+         window.addEventListener("scroll",function(){
+             var header=document.querySelector("header");
+             header.classList.toggle("sticky",window.scrollY >0);
+         })
+    </script>
+    
+    <hr><hr>
+    
+    <nav style="background: #ba7883;" >
+        <table cellspacing="18" cellpadding="'18">
+            <tr>
+                <td><a href="home.html"> </a></td>
+                <td><a href="learn.html"></a></td>
+                <td><a href="game.html"></a></td>
+                <td><a href="ranking.html"></a></td>
+            </tr>
+        </table>
+    </nav>
+    <hr><hr>
+
+    <h1 style="text-align: center; margin-top: 5ch;"><img src="img/quiz.gif" height="9%" width="9%"></h1>
+
+   
+    <div class="timer_box">
+        <section1>
+      
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">300</div>
+            </div>
+            <div class="time_line"></div>
+        </section1>
+
+
+
+    <div class="rules_box">
+        <section2>
+        <div class="rules-title">The rules of the Quiz:</div>
+        <div class="rules-list">
+            <div class="info">1. You have only <span>300 seconds</span> to solve the quiz</div>
+            <div class="info">2. You can't select any option once time goes off.</div>
+            <div class="info">3. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">4. You'll get points on the basis of your correct answers.</div>
+            <div class="info">5. Each question has <span>1 point</span> .</div>
+            <div class="info" style="padding: 0.1cm;"><span><i>Good luck !</i></span> </div>
+        </div>
+    </section2>
+ 
+
+    
+    <div class=" container">
+        <section id="p0">
+            <h6>1. The hardware device commonly referred to as the “brain” of the computer is:</h6>
+            <label>
+                <input type="radio" value="1" name="p0" > RAM chip
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" > Data input
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" > CPU
+            </label>
+        </section>
+
+        <section id="p1">
+            <h6>2. Which of the following images represents a video card? </h6>
+            <label>
+                <input type="radio" value="1" name="p1" > <img src="img/vidcard.jpg" width="50%" height="50%">
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" > <img src="img/ventilator.jpeg" width="30%" height="30%">
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" > <img src="img/box.jpg">
+            </label>
+        </section>
+
+        <section id="p2">
+            <h6>3. Where is the disk put to enable the computer to read it?</h6>
+            <label>
+                <input type="radio" value="1" name="p2" > Memory 
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" > Disk drive
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" > ALU
+            </label>
+        </section>
+
+        <section id="p3">
+            <h6>4. The other name of a motherboard is:</h6>
+            <label>
+                <input type="radio" value="1" name="p3" > System Board
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" > Computer Board
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" > Central Board
+            </label>
+        </section>
+        
+        <section id="p4">
+            <h6>5. Permanent instructions that the computer uses when it is turned on and that cannot be changed by other instructions are contained in ___</h6>
+            <label>
+                <input type="radio" value="1" name="p4" > RAM
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" > ROM
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" > REM
+            </label>
+        </section>
+
+        <section id="p5">
+            <img src="img/parts.jpg">
+            <h6>6. Indicate the random-access memory:</h6>
+            <label>
+                <input type="radio" value="1" name="p5" > 2
+            </label>
+            <label>
+                <input type="radio" value="2" name="p5" > 5
+            </label>
+            <label>
+                <input type="radio" value="3" name="p5" > 1
+            </label>
+        </section>
+
+        <section id="p6">
+            <h6>7. This computer part is responsible for everything you hear through speakers or headphones.</h6>
+            <label>
+                <input type="radio" value="1" name="p6" > Sound Card
+            </label>
+            <label>
+                <input type="radio" value="2" name="p6" > Network Card
+            </label>
+            <label>
+                <input type="radio" value="3" name="p6" > Bluetooth Card
+            </label>
+        </section>
+
+        <section id="p7">
+            <h6>8. Most PCs give a single beep on bootup to indicate they are ok hardware wise. You boot your PC and don't get a beep. What should you check first?</h6>
+            <label>
+                <input type="radio" value="1" name="p7" > Microprocessor
+            </label>
+            <label>
+                <input type="radio" value="2" name="p7" > Speaker
+            </label>
+            <label>
+                <input type="radio" value="3" name="p7" > Power Supply
+            </label>
+        </section>
+
+        <section id="p8">
+            <h6>9. Which of the following is an example of an input device?</h6>
+            <label>
+                <input type="radio" value="1" name="p8">  Keyboard
+            </label>
+            <label>
+                <input type="radio" value="2" name="p8" > Mouse
+            </label>
+            <label>
+                <input type="radio" value="3" name="p8" >  Both 1 & 2
+            </label>
+        </section>
+
+        <section id="p9">
+            <h6>10. The expansion cards are inserted into ___ in a computer</h6>
+            <label>
+                <input type="radio" value="1" name="p9" > Hard Disk of CPU
+            </label>
+            <label>
+                <input type="radio" value="2" name="p9" > Peripheral Devices
+            </label>
+            <label>
+                <input type="radio" value="3" name="p9"> Slots of CPU
+            </label>
+        </section>
+
+        <button><i>Submit</i></button>
+        <p style="color:#ffbf9b; text-align: center; font-size: 1.4rem;">Score: <span id="results"></span></p>
+        <a href="level2.html"><button>Next level</button></a>
+    </div>
+   
+</body>
+</html> 

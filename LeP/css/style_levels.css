@@ -1,0 +1,164 @@
+/*
+level 1 correct answers: 3,1,2,1,2,1,1,2,3,3
+level 2 correct answers:
+1. 1,3,4
+2. 3
+3. 1,3
+4. 1,2,4,5
+5. 1,2,3
+6. 2,3
+7. 1,3,4
+8. 4
+9. 3
+10.
+level 3 correct answers:
+1 D
+2 sectors
+3 ohms
+4 1
+5 sound card
+6 8
+7 protocol
+8 format
+9 false
+10 handshaking
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+body{
+    background: #664147;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* Time left: 300 */
+.timer_box section1 .timer{
+    color: #02080e;
+    background: #9aadbf;
+    border: 5px solid #6D98BA;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    position: sticky;
+    top: 40px ;
+}
+.timer_box  section1 .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.timer_box  section1 .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+
+/* Rules of the Quiz */
+.rules_box .rules-title{
+    color: #d3b99f;
+    text-shadow: 5px 0px 3px #000000;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.rules_box .rules-list{
+    padding: 15px 30px;
+}
+.rules_box .rules-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.rules_box .rules-list .info span{
+    font-weight: 600;
+    color: #f39c6b;
+    text-shadow: 1.5px 0px 3px #000000 ;
+}
+.rules_box section2 .rules-list{
+  
+    background: #9aadbf;
+    border: 10px solid #6D98BA;
+    padding: 0 1px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Quiz section */
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+section{
+    border: 2px solid #f39c6b;
+    border-radius: 30px;
+    border-width: 0.7ch;
+    padding: 10px;
+    margin: 13px 0;
+    background-color: #d3b99f;
+}
+
+/* Answer options */
+label{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed rgb(0, 0, 0);
+    margin-bottom: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #bda68e;
+}
+
+/*label:hover{
+    background: #cec0fc;
+}*/
+
+/* Submit, Next level, Ranking*/
+button{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #6D98BA;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+button:hover{
+    background: #291a1d;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+    transform: scale(1.1);
+}
+
+/* Questions */
+h6{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+/* Score */
+#results{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Learn</title>
+
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/logo_style.css">
+    <link rel="stylesheet" href="css/style_levels.css">
+</head>
+
+
+<body>
+    <header>
+        <a href="#" class="logo"> <img src="img/logo-color.png" width="10%" height="8%" title="Play&Learn" class="picRight"></a>
+        <h1>WELCOME TO LEP</h1>
+            <p style= "font-size: 20px;">-the page where you will discover everything about computers-</p>
+            <p style="font-family: Pristina;font-size: 20px;">Are you ready?Let's get started!</p>
+        <ul1>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="home.html">Home </a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="learn.html">Learn</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Test</a></li>
+            <li style=" font-family: Pristina; text-shadow: 5px 2px 4px #636263;"><a href="game.html">Ranking</a></li>
+            <input style="float: left; width: 15%; font-size: 18px;padding: 11px; border: 1px solid #ddd;" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+        </ul1>
+    </header>
+    
+    
+    <script type ="text/javascript">
+         window.addEventListener("scroll",function(){
+             var header=document.querySelector("header");
+             header.classList.toggle("sticky",window.scrollY >0);
+         })
+    </script>
+    
+    <hr><hr>
+    
+    <nav style="background: #ba7883;" >
+        <table cellspacing="18" cellpadding="'18">
+            <tr>
+                <td><a href="home.html"> </a></td>
+                <td><a href="learn.html"></a></td>
+                <td><a href="game.html"></a></td>
+                <td><a href="ranking.html"></a></td>
+            </tr>
+        </table>
+    </nav>
+    <hr><hr>
+
+
+    <h1 style="text-align: center; margin-top: 5ch;"><img src="img/quiz3.gif" height="10%" width="10%"></h1>
+
+    <div class="timer_box ">
+        <section1>
+      
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">600</div>
+            </div>
+            <div class="time_line"></div>
+        </section1>
+
+
+    <div class="rules_box">
+        <section2>
+        <div class="rules-title"><span>The rules of the Quiz:</span></div>
+        <div class="rules-list">
+            <div class="info">1. You have only <span>600 seconds</span> to solve the quiz</div>
+            <div class="info">2. Write your answers in <span>lower case</span> letters . </div>
+            <div class="info">3. Don't use diacritics or other punctuation marks. </div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. Each question has <span>5 point</span> .</div>
+            <div class="info" style="padding: 0.1cm;"><span><i>Good luck !</i></span> </div>
+        </div>
+    </section2>
+ 
+            
+    <div class=" container">
+        <section id="p0">
+            <h6>1. A system has two IDE hard drives that are each divided into primary and extended partitions, 
+                which drive letter is assigned to the primary partition of the second drive?</h6>
+            <label>
+                <input type="text"  name="p0" >
+            </label>
+        </section>
+
+        <section id="p1">
+            <h6>2. A hard disk is divided into tracks which are further subdivided into: </h6>
+            <label>
+                <input type="text"  name="p1" > 
+            </label>
+        </section>
+
+        <section id="p2">
+            <h6>3. Resistance is measured in: </h6>
+            <label>
+                <input type="text" name="p2" >
+            </label>
+        </section>
+
+        <section id="p3">
+            <h6>4. Topically, how many type III PC cards can you insert in a laptop?</h6>
+            <label>
+                <input type="text" name="p3" > 
+            </label>      
+        </section>
+        
+        <section id="p4">
+            <h6>5. Which device uses a DMA channel? </h6>
+            <label>
+                <input type="text" name="p4" > 
+            </label>
+        </section>
+
+        <section id="p5">
+            <h6>6. How many devices can be used on a single SCSI bus? Keep in mind that the SCSI host adapter counts as a device.</h6>
+            <label>
+                <input type="text"  name="p5" > 
+            </label>  
+        </section>
+
+        <section id="p6">
+            <h6>7. What is a common language that computers use to talk with one another on a network? </h6>
+            <label>
+                <input type="text" name="p6" > 
+            </label>
+        </section>
+
+        <section id="p7">
+            <h6>8. You see the message "invalid media device" after installing a new hard drive. Name the action that you do next. </h6>
+            <label>
+                <input type="text" name="p7" >
+            </label>
+        </section>
+
+        <section id="p8">
+            <h6>9. True or false? You can have EISA and MCA devices in the same PC.</h6>
+            <label>
+                <input type="text"  name="p8"> 
+            </label>
+        </section>
+
+        <section id="p9">
+            <h6>10. What is the term used to refer to the process of two modems establishing communications with each other?</h6>
+            <label>
+                <input type="text" name="p9" > 
+            </label>
+        </section>
+
+        <button><i>Submit</i></button>
+        <p style="color:#ffbf9b; text-align: center; font-size: 1.4rem;">Score: <span id="results"></span></p>
+        <button>Ranking</button>
+    </div>
+   
+</body>
+</html> 

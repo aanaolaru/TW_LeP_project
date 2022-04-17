@@ -74,7 +74,13 @@
                     <li> <a href="#chapter5_4">Software Quality Attributes </a> </li>
                 </ol>
             </li>
-                </section>
+            <a href="#OtherRequirements1"> Other Requirments </a> <br>
+            <a href="#Appendix_A:_Glossary"> Appendix A : Glossary </a> <br>
+            <a href="#Appendix_B:_Analysis Models"> Appendix B : Analysis Models </a> <br>
+            <a href="#Appendix_C:_To_Be_Determined_List"> Appendix C : To Be Determined List </a> <br>
+        </ol>
+      </section>
+        
     <div role="contentinfo">
         <dl>
             <dt>Authors</dt>
@@ -623,3 +629,32 @@
             </p>
         </section>
      </section>  
+
+     <section id="OtherRequirements1">
+        <h2> Other Requirements </h2>
+        <p> </p>
+    </section>
+    <section id="Appendix_A:_Glossary">
+        <h2> Appendix A: Glossary </h2>
+        <ol>
+            <li> SRS = Software Requirements Specification </li>
+        </ol>
+    </section>
+    <section id="Appendix_B:_Analysis Models">
+        <h2> Appendix B: Analysis Models </h2>
+        <p> &nbsp; &nbsp; &nbsp; &nbsp;Stocarea informatiilor in vederea calculului de punctaje se face prin intermediul unei baze de date MySQL, ce va contine mai multe tabele care sunt conectate cu ajutorul anumitor constrageri : chei primare respectiv
+            chei straine. Tabelele principale sunt doua : Tabela USERS - unde se va stoca username-ul si parola utilizatorului,iar drept cheie primara vom folosi un id_user, respectiv tabela SCORES ce cuprinde punctajul userului, path-ul catre pagina
+            sa, si o serie de caracteristici(cu ajutorul carora se va realiza calculul) si un ID_score utilizat drept cheie primara. Comunicarea intre cele doua tabele se va realiza folosind o tabela intermediara UsersScore care va avea drept
+            elemente cele doua ID-uri, ID-user, ID-score cu valoare de chei straine in tabela curenta.</p>
+        <p> &nbsp; &nbsp; &nbsp; &nbsp;Pe langa tabelele mentionate anterior, este necesara si adaugarea a diverse tabele pentru fiecare functionalitate a aplicatiei :</p>
+        <p> &nbsp; &nbsp; &nbsp; &nbsp;Pentru a rezolva un nivel este necesara identificarea userului si pastrarea acestor informatii in baza de date. Asadar, va fi nevoie de o tabela SOLVE-LEVEL : ce pastreaza ID-user(cheie straina),userul ce a rezolvat nivelul
+            ,numarul nivelului rezolvat de user , ID_NIVEL(cheie primara) ce este necesara mai departe atunci cand userul doreste sa isi modifice punctajul obtinut daca doreste sa joace din nou.</p>
+        
+    </section>
+    <section id="Appendix_C:_To_Be_Determined_List">
+        <h2> Appendix C: To Be Determined List </h2>
+        <p>
+            &nbsp; &nbsp; &nbsp; &nbsp; Aplicatia WEB determina niste statistici referitoare la componentele prezentate in momentul apasarii butonului expandat "Start learning" , raportul statistic poate fi vizualizat de utilizator fie in format CSV fie in format PDF.
+            <p> &nbsp; &nbsp; &nbsp; &nbsp; Un alt lucru determinat de aplicatia WEB e un clasament al utilizatorilor bazat pe mai multe criterii precum id-ul jucatorului, timpul mediu de rezolvare, numarul de puncte acumulate.</p>
+        </p>
+    </section>
